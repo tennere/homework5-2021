@@ -115,15 +115,15 @@ header{
   /* YOUR CODE HERE; */
   /* Req 6 */
   background-image: url('../images/header.jpg');
-  grid-column: span;
-  grid-row: 1 / span 1;
+  grid-row: 1 / -1;
+  grid-column: 1 / 6;
   background-repeat: no-repeat;
 }
 
 
 /* Reqs 7 & 8 */
 .about-image{
-  grid-column: span;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 2 / span 1;
@@ -135,7 +135,7 @@ header{
 }
 
 .method-image{
-  grid-column: span;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 3 / span 1;
@@ -147,7 +147,7 @@ header{
 }
 
 .clients-image{
-  grid-column: span;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 4 / span 1;
@@ -159,7 +159,7 @@ header{
 }
 
 .contact-image{
-  grid-column: span;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 5 / span 1;
@@ -178,8 +178,7 @@ header{
 
   /* Your code here */
   /* Req 9 */
-  justify-content: center;
-  align-content: center;
+  align-self: center;
 }
 
 @media screen and (min-width: 800px){
